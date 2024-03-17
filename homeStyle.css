@@ -184,5 +184,38 @@ main{
         }
     }
 
+    .person-contact {
+        .info {
+            padding: 200px 0 0 0;
+            max-width: 1630px;
+            width: 100%;
+            .name-content {
+                .content {
+                    font-family: Manrope;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 27px;
+                    letter-spacing: 0em;
+                    color: #62646C;
+                    margin: 0;
+    
+                }
+                .name {
+                    font-family: Manrope;
+                    font-size: 58px;
+                    font-weight: 600;
+                    line-height: 79px;
+                    letter-spacing: 0em;
+                    color: #E4E4E6;
+                    margin: 0;
+                }
+            }
+
+            .button-know {
+            }
+        }
+        
+    }
+
 }
 
