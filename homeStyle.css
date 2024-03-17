@@ -1,4 +1,5 @@
 header .header {
+    z-index: 20;
     position: fixed; 
     left: 0; 
     top: 0;
@@ -143,7 +144,43 @@ main{
                     letter-spacing: 0em;
                 }
             }
+        }
 
+        .picture {
+            width: 100%;
+            max-width: 1630px;
+            padding: 0;
+            height: 512px;
+
+            .image {
+                position: relative;
+                top: 263px;
+                right: 524px;
+            }
+
+            .yellow {
+                position: relative;
+                top: 157px;
+                right: 514px;
+            }
+
+            .red {
+                position: relative;
+                bottom: 354px;
+                left: 541px;
+            }
+
+            .grass {
+                position: relative;
+                bottom: 464px;
+                left: 550px;
+            }
+
+            .air {
+                position: relative;
+                bottom: 201px;
+                left: 157px;
+            }
         }
     }
 
