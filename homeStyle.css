@@ -211,7 +211,23 @@ main{
                 }
             }
 
-            .button-know {
+            .button-know  {
+                .button-know {
+                    width: 148px;
+                    height: 59px;
+                    border-radius: 10px;
+                    background-color: #2F2F37;
+                    color: #fff;
+                    font-family: Manrope;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 27px;
+                    letter-spacing: 0em;
+                    border: 1px solid #2F2F37;
+                }
+                button:hover {
+                    background-color: #343a40;
+                }
             }
         }
         
