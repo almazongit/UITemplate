@@ -62,13 +62,13 @@ header .header .navbar .btn-contact{
 header .header .navbar .btn-contact:hover{
     background-color: #343a40;
 }
-
+body {
+    background-color: #000;
+}
 main{
     width: 100%;
     height: 100vw;
-    background-color: #000;
-    
-    
+
     .name-picture-roller {
         padding: 120px 0 0 0;
         .up {
@@ -185,10 +185,12 @@ main{
     }
 
     .person-contact {
+        max-width: 1630px;
+        width: 100%;
         .info {
-            padding: 200px 0 0 0;
-            max-width: 1630px;
-            width: 100%;
+            padding: 200px 0 50px 0;
+
+            border-bottom: 1px solid #343a40;
             .name-content {
                 .content {
                     font-family: Manrope;
@@ -212,7 +214,7 @@ main{
             }
 
             .button-know  {
-                .button-know {
+                .btn-know {
                     width: 148px;
                     height: 59px;
                     border-radius: 10px;
@@ -225,11 +227,84 @@ main{
                     letter-spacing: 0em;
                     border: 1px solid #2F2F37;
                 }
-                button:hover {
+                .btn-know:hover {
                     background-color: #343a40;
                 }
             }
         }
+
+        .person-picture-text-contact {
+            padding: 80px 0 0 0;
+            gap: 30px;
+            .text-content {
+                width: 100%;
+                height: 612px;
+                border: 1px solid #343a40;
+                border-radius:20px;
+
+                .label {
+                    padding: 40px;
+                    border-bottom: 1px solid #343a40;
+                    .introduction {
+                        gap: 10px;
+                        
+                        .text{
+                            margin: 0;
+                            padding: 0;
+                            font-family: Manrope;
+                            font-size: 30px;
+                            font-weight: 300;
+                            line-height: 41px;
+                            color: #fff;
+                        }
+                    }
+
+                    .text{
+                        margin: 0;
+                        padding: 20px 0 0 0;
+                        font-family: Manrope;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 27px;
+                        color: #7d7979;                        
+                    }
+                }
+
+                .contact-mail-buttons {
+                    gap: 40px;
+                    padding: 40px;
+                    .contact-info {
+
+                        .introduction {
+                            gap: 10px;
+                            
+                            .text{
+                                margin: 0;
+                                padding: 0;
+                                font-family: Manrope;
+                                font-size: 30px;
+                                font-weight: 300;
+                                line-height: 41px;
+                                color: #fff;
+                            }
+                        }
+
+                        .email-number {
+                            gap: 20px;
+                            .name {
+                                width: 100%;
+                            }
+                            .content {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+        }
+
         
     }
 
