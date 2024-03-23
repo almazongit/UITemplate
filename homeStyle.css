@@ -88,6 +88,7 @@ main{
             .name-lines {
                 .name-content {
                     .content {
+                        text-transform: uppercase;
                         font-family: Manrope;
                         font-size: 22px;
                         font-weight: 500;
@@ -98,6 +99,7 @@ main{
     
                     }
                     .name {
+                        text-transform: uppercase;
                         font-family: Manrope;
                         font-size: 80px;
                         font-weight: 600;
@@ -405,6 +407,7 @@ main{
             border-bottom: 1px solid #343a40;
             .name-content {
                 .content {
+                    text-transform: uppercase;
                     font-family: Manrope;
                     font-size: 20px;
                     font-weight: 500;
@@ -415,6 +418,7 @@ main{
     
                 }
                 .name {
+                    text-transform: uppercase;
                     font-family: Manrope;
                     font-size: 58px;
                     font-weight: 600;
@@ -558,6 +562,7 @@ main{
             border-bottom: 1px solid #343a40;
             .name-content {
                 .content {
+                    text-transform: uppercase;
                     font-family: Manrope;
                     font-size: 20px;
                     font-weight: 500;
@@ -568,6 +573,7 @@ main{
     
                 }
                 .name {
+                    text-transform: uppercase;
                     font-family: Manrope;
                     font-size: 58px;
                     font-weight: 600;
@@ -652,7 +658,44 @@ main{
                 }
             }
         }
+
     }
+
+    .faq {
+        max-width: 1630px;
+        width: 100%;
+        padding: 200px 0 0;
+        .info {
+            padding: 0 0 50px 0;
+
+            border-bottom: 1px solid #343a40;
+            .name-content {
+                .content {
+                    text-transform: uppercase;
+                    font-family: Manrope;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 27px;
+                    letter-spacing: 0em;
+                    color: #62646C;
+                    margin: 0;
+    
+                }
+                .name {
+                    text-transform: uppercase;
+                    font-family: Manrope;
+                    font-size: 58px;
+                    font-weight: 600;
+                    line-height: 79px;
+                    letter-spacing: 0em;
+                    color: #E4E4E6;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+
 
 }
 
