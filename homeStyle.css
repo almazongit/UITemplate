@@ -1,3 +1,11 @@
+* {
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
 header .header {
     z-index: 20;
     position: fixed; 
@@ -41,7 +49,8 @@ header .header .navbar .btns-nav .btn-nav{
 }
 
 header .header .navbar .btns-nav .btn-nav:hover {
-    background: #343a40;
+    background: #fff;
+    color: #343a40;
 }
 header .header .navbar .btn-link{
 
@@ -60,7 +69,8 @@ header .header .navbar .btn-contact{
     border: 1px solid #2F2F37;
 }
 header .header .navbar .btn-contact:hover{
-    background-color: #343a40;
+    background-color: #fff;
+    color: #2F2F37;
 }
 body {
     background-color: #000;
@@ -228,7 +238,8 @@ main{
                     border: 1px solid #2F2F37;
                 }
                 .btn-know:hover {
-                    background-color: #343a40;
+                    background-color: #fff;
+                    color: #2F2F37;
                 }
             }
         }
@@ -273,12 +284,11 @@ main{
                 .contact-mail-buttons {
                     gap: 40px;
                     padding: 40px;
-                    .contact-info {
 
-                        .introduction {
+                    .introduction {
                             gap: 10px;
                             
-                            .text{
+                            .text-contact{
                                 margin: 0;
                                 padding: 0;
                                 font-family: Manrope;
@@ -287,19 +297,88 @@ main{
                                 line-height: 41px;
                                 color: #fff;
                             }
-                        }
+                    }
 
-                        .email-number {
+                    .email-number {
                             gap: 20px;
-                            .name {
+                            .name, .content {
                                 width: 100%;
+                                .text-title {
+                                    font-family: Manrope;
+                                    font-size: 18px;
+                                    font-weight: 500;
+                                    line-height: 27px;
+                                    color: #fff;
+                                }
+                                .text {
+                                    font-family: Manrope;
+                                    font-size: 20px;
+                                    font-weight: 400;
+                                    line-height: 30px;
+                                    color: #7d7979;
+                                }
+                                
                             }
                             .content {
                                 width: 100%;
                             }
-                        }
                     }
 
+                    .buttons {
+                        .media {
+                            width: 196px;
+                            height: 68px;
+                            border-radius: 40px;
+                            background-color: #000;
+                            border: 1px solid #343a40;
+
+                            .logos {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                gap: 16px;
+                                .logo {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-color: #2F2F37;
+                                    height: 48px;
+                                    width: 48px;
+                                    border: 1px solid #343a40;
+                                    border-radius: 30px;
+                                }
+                                .logo:hover {
+                                    background-color: #fff;
+                                    img {
+                                        filter: brightness(0%);
+                                    }
+                                }
+                            
+                            }
+
+                        }
+                        .download {
+                            gap: 20px;
+                            button {
+                                font-family: Manrope;
+                                font-size: 18px;
+                                font-weight: 500;
+                                line-height: 27px;
+                                text-decoration: none;
+                                height: 63px;
+                                width: 213px;
+                                color: #fff;
+                                background-color: #343a40;
+                                border: 1px solid #5c5858;
+                                border-radius: 12px;
+                            }
+                            button:hover {
+                                background-color: #fff;
+                                color: #343a40;
+                            }
+                        }
+                        
+                    }
                 }
 
             }
@@ -307,6 +386,11 @@ main{
 
         
     }
+
+    .services-event {
+        
+    }
+
 
 }
 
