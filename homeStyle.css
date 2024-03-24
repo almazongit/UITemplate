@@ -800,9 +800,6 @@ main{
                 flex-direction: column;
                 gap:10px;
                 width: 50%;
-            
-                padding: 20px 0;
-
                 .attribute {
             
                     display: flex;
@@ -861,13 +858,13 @@ main{
                     }
                 }
                 
-                .attribute-item:not(:first-child) {
-                    border-top: 1px solid #1C1C21;
+                .attribute:not(:first-child) {
+                    border-top: 1px solid #343a40;
                 }
             }
 
             .attribute-items:first-child {
-                border-right: 1px solid #1C1C21;
+                border-right: 1px solid #343a40;
                 border-top: none;
             }
         }
