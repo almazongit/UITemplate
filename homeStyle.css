@@ -1,9 +1,39 @@
+
 * {
     p {
         margin: 0;
         padding: 0;
     }
 }
+
+/* @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .container {
+        margin: 0 162px;
+        max-width: 1597px;
+    }
+}
+
+
+@media screen and (min-width: 1921px) {
+    .container {
+        margin: 0 162px;
+        max-width: 1597px;
+    }
+}
+
+
+@media screen and (min-width: 390px) and (max-width: 1439px) {
+    .container {
+        margin: 0 80px;
+    }
+}
+
+
+@media screen and (max-width: 389px) {
+    .container {
+        margin: 0 16px;
+    }
+}  */
 
 
 header .header {
@@ -20,6 +50,10 @@ header .header .navbar {
     height: 100%;
     width: 100%;
     max-width: 1630px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 header .header .navbar .logo{
     font-size: 27px;
@@ -49,8 +83,8 @@ header .header .navbar .btns-nav .btn-nav{
 }
 
 header .header .navbar .btns-nav .btn-nav:hover {
-    background: #fff;
-    color: #343a40;
+    background: #343a40;
+    color: #fff;
 }
 header .header .navbar .btn-link{
 
@@ -85,6 +119,9 @@ main{
             max-width: 1630px;
             padding: 0;
             .name-lines {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
                 .name-content {
                     .content {
                         text-transform: uppercase;
@@ -111,7 +148,12 @@ main{
     
                 .slogan-btn {
                     .text-btn {
+                        display: flex;
+                        align-items: center;
                         .stroke-btn {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
                             width: 130px;
                             height: 66px;
                             padding: 18px 50px;
@@ -143,6 +185,8 @@ main{
 
         
         .roller{
+            display: flex;
+            flex-direction: row;
             width: 100%;
             height: 80px;
             border: 1px solid #343a40;
@@ -150,6 +194,9 @@ main{
             border-right: 0;
             background-color: #0E0E10;
             .content {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
                 height: 100%;
                 p {
                     font-family: Manrope;
@@ -204,10 +251,15 @@ main{
         width: 100%;
         padding: 200px 0 0;
         .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             padding: 0 0 50px 0;
 
             border-bottom: 1px solid #343a40;
             .name-content {
+                display: flex;
+                flex-direction: column;
                 .content {
                     font-family: Manrope;
                     font-size: 20px;
@@ -252,18 +304,28 @@ main{
         }
 
         .person-picture-text-contact {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             padding: 80px 0 0 0;
             gap: 30px;
             .text-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
                 width: 100%;
                 height: 612px;
                 border: 1px solid #343a40;
                 border-radius:20px;
 
                 .label {
+                    display: flex;
+                    flex-direction: column;
                     padding: 40px;
                     border-bottom: 1px solid #343a40;
                     .introduction {
+                        display: flex;
+                        flex-direction: row;
                         gap: 10px;
                         
                         .text{
@@ -289,10 +351,15 @@ main{
                 }
 
                 .contact-mail-buttons {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
                     gap: 40px;
                     padding: 40px;
 
                     .introduction {
+                            display: flex;
+                            align-items: center;
                             gap: 10px;
                             
                             .text-contact{
@@ -307,8 +374,13 @@ main{
                     }
 
                     .email-number {
+                        display: flex;
+                        flex-direction: row;
                             gap: 20px;
                             .name, .content {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: start;
                                 width: 100%;
                                 .text-title {
                                     font-family: Manrope;
@@ -332,7 +404,12 @@ main{
                     }
 
                     .buttons {
+                        display: flex;
+                        justify-content: space-between;
                         .media {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
                             width: 196px;
                             height: 68px;
                             border-radius: 40px;
@@ -365,6 +442,9 @@ main{
 
                         }
                         .download {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
                             gap: 20px;
                             button {
                                 font-family: Manrope;
@@ -399,10 +479,15 @@ main{
         width: 100%;
         padding: 200px 0 0;
         .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             padding: 0 0 50px 0;
 
             border-bottom: 1px solid #343a40;
             .name-content {
+                display: flex;
+                flex-direction: column;
                 .content {
                     text-transform: uppercase;
                     font-family: Manrope;
@@ -505,6 +590,9 @@ main{
                         }
 
                         .stroke-btn {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
                             width: 130px;
                             height: 66px;
                             padding: 18px 50px;
@@ -585,10 +673,15 @@ main{
         width: 100%;
         padding: 200px 0 0;
         .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             padding: 0 0 50px 0;
 
             border-bottom: 1px solid #343a40;
             .name-content {
+                display: flex;
+                flex-direction: column;
                 .content {
                     text-transform: uppercase;
                     font-family: Manrope;
@@ -635,6 +728,9 @@ main{
         }
 
         .portfolio {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
             padding: 80px 0 0;
             .project {
                 display: flex;
@@ -694,8 +790,13 @@ main{
         width: 100%;
         padding: 200px 0 0;
         .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             padding: 0 0 50px 0;
             .name-content {
+                display: flex;
+                flex-direction: column;
                 .content {
                     text-transform: uppercase;
                     font-family: Manrope;
@@ -717,6 +818,88 @@ main{
                     color: #E4E4E6;
                     margin: 0;
                 }
+            }
+        }
+
+        .faq-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            .attributes {
+                display: flex;
+                flex-direction: column;
+                gap:10px;
+                width: 50%;
+            
+                padding: 20px 0;
+
+                .attribute {
+            
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 40px;
+                    flex-direction: row-reverse;
+                
+                    position: relative;
+                    padding: 30px 50px;
+
+                    .attribute-input {
+                        position: absolute;
+                        top:0;
+                        left:0;
+                        opacity: 0;
+                    }
+
+                    .attribute-input:checked ~ .attribute-content > .attribute-text{
+                        display: block;
+                    }
+                    .attribute-input:checked ~ .attribute-btn{
+                        padding: 20px;
+                        background: url('/images/faq_open.svg') no-repeat center;
+                    }
+                    
+                    .attribute-btn {
+                        cursor: pointer;
+                    
+                        border-radius: 50%;
+                        padding: 20px;
+                        
+                        width: 52px;
+                        height: 52px;
+                    
+                        border: 1px solid #1C1C21;
+                    
+                        background: url('/images/faq_close.svg') no-repeat center;
+                    }
+                    
+                    .attribute-content {
+                        .attribute-header {
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 27px;
+                        
+                            color: #AFB0B6;
+                            text-transform: uppercase;
+                        
+                        }
+                        .attribute-text {
+                            padding-top: 20px;
+                        
+                            border-top: none;
+                            display: none;
+                        }
+                    }
+                }
+                
+                .attribute-item:not(:first-child) {
+                    border-top: 1px solid #1C1C21;
+                }
+            }
+
+            .attribute-items:first-child {
+                border-right: 1px solid #1C1C21;
+                border-top: none;
             }
         }
     }
@@ -742,6 +925,8 @@ main{
 footer {
     .roller-footer {
         .roller{
+            display: flex;
+            flex-direction: row;
             width: 100%;
             height: 80px;
             border: 1px solid #343a40;
@@ -749,6 +934,9 @@ footer {
             border-right: 0;
             background-color: #0E0E10;
             .content {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
                 height: 100%;
                 p {
                     font-family: Manrope;
@@ -785,7 +973,13 @@ footer {
                 }
     
                 .slogan-btn {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
                     .text-btn {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
                         .stroke-btn {
                             width: 130px;
                             height: 66px;
@@ -857,6 +1051,80 @@ footer {
             }
         }
 
+    }
+    .social-footer {
+        height: 107px;
+        width: 100%;
+        border-top: 1px solid #343a40;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .social {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            .policy {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                gap: 11px;
+                p {
+                    color: #797C86;
+                    font-family: Manrope;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 27px;
+                }
+                .term {
+                    padding-right: 11px;
+                    border-right: 1px solid #1c1c21;
+                }
+            }
+
+            .media {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 196px;
+                height: 68px;
+                border-radius: 40px;
+                background-color: #000;
+                border: 1px solid #343a40;
+                .logos {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 16px;
+                    .logo {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #2F2F37;
+                        height: 48px;
+                        width: 48px;
+                        border: 1px solid #343a40;
+                        border-radius: 30px;
+                    }
+                    .logo:hover {
+                        background-color: #fff;
+                        img {
+                            filter: brightness(0%);
+                        }
+                    }
+                }
+            }
+
+            p {
+                color: #797C86;
+                font-family: Manrope;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 27px;
+            }
+        }
     }
 }
 
