@@ -426,34 +426,58 @@ main{
                 }
             }
 
-            .button-know  {
-                padding: 0;
-                .btn-know {
-                    width: 210px;
-                    height: 59px;
-                    border-radius: 10px;
-                    background-color: #2F2F37;
-                    color: #fff;
-                    font-family: Manrope;
-                    font-size: 18px;
-                    font-weight: 400;
-                    line-height: 27px;
-                    letter-spacing: 0em;
-                    border: 1px solid #2F2F37;
+            .control_elements {
+                display: flex;
+                gap: 30px;
+                align-items: center;
+                .arrows {
+                    display: flex;
+                    gap: 16px;
+                    border: 1px solid #1C1C21;
+                    padding: 10px;
+                    border-radius: 100px;
+                    .left, .right {
+                        border: 1px solid;
+                        border-image-source: linear-gradient(180deg, #2F2F37 27.85%, rgba(47, 47, 55, 0) 100%);
+                        border-radius: 100%;
+                        background: #1C1C21;
+                        cursor: pointer;
+                        img {
+                            padding: 23px 27px;
+                        }
+                    }
                 }
-                .btn-know:hover {
-                    background-color: #fff;
-                    color: #2F2F37;
+                .button-know {
+                    padding: 0;
+
+                    .btn-know {
+                        width: 210px;
+                        height: 59px;
+                        border-radius: 10px;
+                        background-color: #2F2F37;
+                        color: #fff;
+                        font-family: Manrope;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 27px;
+                        letter-spacing: 0em;
+                        border: 1px solid #2F2F37;
+                    }
+
+                    .btn-know:hover {
+                        background-color: #fff;
+                        color: #2F2F37;
+                    }
                 }
             }
         }
 
         .events-highlights-picture {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 50px;
-            padding: 80px 0 0;
+            /*display: flex;*/
+            /*justify-content: space-between;*/
+            /*align-items: center;*/
+            /*gap: 50px;*/
+            /*padding: 80px 0 0;*/
             .events-highlights {
                 display: flex;
                 flex-direction: column;
@@ -543,6 +567,13 @@ main{
                     }
                 }
 
+            }
+            .events-slide {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 50px;
+                padding: 80px 0 0;
             }
         }
 
