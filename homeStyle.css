@@ -78,8 +78,7 @@ header .header .navbar .btns-nav{
 
 
 header .header .navbar .btns-nav .btn-nav{
-    width: 161px;
-    height: 87px;
+    padding: 30px 50px;
     color: #fff;
     background-color: #000;
     font-family: Manrope;
@@ -88,9 +87,6 @@ header .header .navbar .btns-nav .btn-nav{
     line-height: 27px;
     letter-spacing: 0em;
     border: 1px #343a40 solid;
-    /* border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;  */
-    border-bottom: unset;
 }
 
 header .header .navbar .btns-nav .btn-nav:hover {
@@ -101,8 +97,7 @@ header .header .navbar .btn-link{
 
 }
 header .header .navbar .btn-contact{
-    width: 148px;
-    height: 59px;
+    padding: 16px 24px;
     border-radius: 10px;
     background-color: #2F2F37;
     color: #fff;
@@ -166,8 +161,7 @@ main{
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            width: 130px;
-                            height: 66px;
+                            padding: 23px 55px;
                             gap: 10px;
                             border-radius: 100px;
                             background-color: #4A2CED;
@@ -296,8 +290,7 @@ main{
             .button-know  {
                 padding: 0;
                 .btn-know {
-                    width: 148px;
-                    height: 59px;
+                    padding: 16px 24px;
                     border-radius: 10px;
                     background-color: #2F2F37;
                     color: #fff;
@@ -607,8 +600,7 @@ main{
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            width: 130px;
-                            height: 66px;
+                            padding: 23px 55px;
                             gap: 10px;
                             border-radius: 100px;
                             background-color: #4A2CED;
@@ -674,7 +666,6 @@ main{
                 justify-content: space-between;
                 align-items: center;
                 gap: 50px;
-                padding: 80px 0 0;
 
             }
         }
@@ -743,12 +734,27 @@ main{
                             padding: 23px 27px;
                         }
                     }
+
+                    .left-portfolio:hover {
+                        background: #fff;
+                        img {
+                            filter: brightness(0%);
+                        }
+                        
+                    }
+                    
+                    .right-portfolio:hover {
+                        background: #fff;
+                        img {
+                            filter: brightness(0%);
+                        }
+                    }
+
                 }
                 .button-know  {
                     padding: 0;
                     .btn-know {
-                        width: 210px;
-                        height: 59px;
+                        padding: 16px 24px;
                         border-radius: 10px;
                         background-color: #2F2F37;
                         color: #fff;
@@ -949,7 +955,6 @@ main{
     }
 
     .reviews {
-        max-width: 1630px;
         width: 100%;
         padding: 200px 0 0;
         position: relative;
@@ -1038,11 +1043,26 @@ main{
                             padding: 23px 27px;
                         }
                     }
+
+                    .left-review:hover {
+                        background: #fff;
+                        img {
+                            filter: brightness(0%);
+                        }
+                        
+                    }
+                    
+                    .right-review:hover {
+                        background: #fff;
+                        img {
+                            filter: brightness(0%);
+                        }
+                    }
                 }
                 .button-know  {
                     padding: 0;
                     .btn-know {
-                        height: 59px;
+                        padding: 16px 24px;
                         border-radius: 10px;
                         background-color: #2F2F37;
                         color: #fff;
@@ -1065,7 +1085,6 @@ main{
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
-            padding: 80px 0 0;
             transition: transform 0.5s ease;
             .project:last-child {
                 margin-right: 0;
@@ -1228,8 +1247,7 @@ footer {
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            width: 130px;
-                            height: 66px;
+                            padding: 23px 55px;
                             gap: 10px;
                             border-radius: 100px;
                             background-color: #4A2CED;
