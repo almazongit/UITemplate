@@ -250,6 +250,9 @@ main{
         max-width: 1630px;
         width: 100%;
         padding: 200px 0 0;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
         .info {
             display: flex;
             justify-content: space-between;
@@ -478,6 +481,9 @@ main{
         max-width: 1630px;
         width: 100%;
         padding: 200px 0 0;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
         .info {
             display: flex;
             justify-content: space-between;
@@ -676,6 +682,9 @@ main{
         padding: 200px 0 0;
         position: relative;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
         .info {
             display: flex;
             justify-content: space-between;
@@ -933,6 +942,199 @@ main{
                 border-top: none;
             }
         }
+    }
+
+    .reviews {
+        max-width: 1630px;
+        width: 100%;
+        padding: 200px 0 0;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        .reviews-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            padding: 0 0 50px 0;
+            border-bottom: 1px solid #343a40;
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .name-content {
+                    display: flex;
+                    flex-direction: column;
+
+                    .content {
+                        text-transform: uppercase;
+                        font-family: Manrope;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 27px;
+                        letter-spacing: 0em;
+                        color: #62646C;
+                        margin: 0;
+                    }
+
+                    .name {
+                        text-transform: uppercase;
+                        font-family: Manrope;
+                        font-size: 58px;
+                        font-weight: 600;
+                        line-height: 79px;
+                        letter-spacing: 0em;
+                        color: #E4E4E6;
+                        margin: 0;
+                    }
+                }
+                .name-content--total {
+                    display: flex;
+                    flex-direction: column;
+
+                    .content {
+                        font-family: Manrope;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 27px;
+                        letter-spacing: 0em;
+                        color: #62646C;
+                        margin: 0;
+                    }
+
+                    .name {
+                        font-family: Manrope;
+                        font-size: 28px;
+                        font-weight: 500;
+                        line-height: 42px;
+                        letter-spacing: 0em;
+                        color: #CACACE;
+                        margin: 0;
+                    }
+                }
+            }
+            .control_elements {
+                display: flex;
+                gap: 30px;
+                align-items: center;
+                .arrows {
+                    display: flex;
+                    gap: 16px;
+                    border: 1px solid #1C1C21;
+                    padding: 10px;
+                    border-radius: 100px;
+                    .left-review, .right-review {
+                        border: 1px solid;
+                        border-image-source: linear-gradient(180deg, #2F2F37 27.85%, rgba(47, 47, 55, 0) 100%);
+                        border-radius: 100%;
+                        background: #1C1C21;
+                        cursor: pointer;
+                        img {
+                            padding: 23px 27px;
+                        }
+                    }
+                }
+                .button-know  {
+                    padding: 0;
+                    .btn-know {
+                        height: 59px;
+                        border-radius: 10px;
+                        background-color: #2F2F37;
+                        color: #fff;
+                        font-family: Manrope;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 27px;
+                        letter-spacing: 0em;
+                        border: 1px solid #2F2F37;
+                    }
+                    .btn-know:hover {
+                        background-color: #fff;
+                        color: #2F2F37;
+                    }
+                }
+            }
+
+        }
+        .reviews-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            padding: 80px 0 0;
+            transition: transform 0.5s ease;
+            .project:last-child {
+                margin-right: 0;
+            }
+            .reviews-list--single {
+                flex: 0 0 auto;
+                width: calc(100% / 3 - 30px);
+                margin-right: 30px;
+
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-content: space-between;
+                gap: 30px;
+                box-sizing: border-box;
+                padding: 40px;
+                background: #0E0E10;
+                .info-panel {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .info-panel--text {
+                        display: flex;
+                        flex-direction: column;
+                        p {
+                            font-family: Manrope;
+                            font-size: 20px;
+                            font-weight: 500;
+                            line-height: 30px;
+                            text-align: left;
+                            color: #E4E4E6;
+                        }
+                        span {
+                            font-family: Manrope;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 27px;
+                            text-align: left;
+                            color: #62646C;
+                        }
+                    }
+                    .info-panel--socials {
+                        padding: 10px;
+                        border-radius: 100px;
+                        border: 1px solid #1C1C21;
+                        display: flex;
+                        gap: 10px;
+                        .circle {
+                            display: flex;
+                            align-items: center;
+                            border-radius: 100px;
+                            padding: 14px;
+                            background: #1C1C21;
+                            border-image-source: linear-gradient(180deg, #2F2F37 27.85%, rgba(47, 47, 55, 0) 100%);
+                        }
+                    }
+                }
+                .rating {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                }
+                .text {
+                    font-family: Manrope;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    text-align: left;
+                    color: #E4E4E6;
+                }
+            }
+        }
+
     }
 
     .word-decoration{

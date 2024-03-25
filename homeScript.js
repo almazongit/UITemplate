@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     showSlide(currentSlide);
 
 
+
     // ---------- СЛАЙДЕР portfolio-info ----------
     // Получаем блоки проектов и стрелки управления
     const portfolio = document.querySelector('.portfolio');
@@ -52,5 +53,31 @@ document.addEventListener("DOMContentLoaded", function () {
     // Обработчики клика на стрелки влево и вправо
     leftArrowPortfolio.addEventListener('click', () => shiftProjects(1)); // Сдвигаем вправо на один проект
     rightArrowPortfolio.addEventListener('click', () => shiftProjects(-1)); // Сдвигаем влево на один проект
+
+
+
+    // ---------- СЛАЙДЕР reviews ----------
+    // Получаем блоки отзывов и стрелки управления
+    const reviews = document.querySelector('.reviews-list');
+    const review_single = reviews.querySelectorAll('.reviews-list--single');
+    const leftArrowReview = document.querySelector('.left-review');
+    const rightArrowReview = document.querySelector('.right-review');
+
+    let currentPositionReview = 0; // Текущая позиция слайдера
+
+    // Функция для сдвига блоков отзывов
+    function shiftReviews(direction) {
+        const reviewWidth = review_single[0].offsetWidth + 30; // Ширина одного блока отзыва
+        const shiftAmountReview = reviewWidth * direction; // Расстояние, на которое нужно сдвинуть отзывы
+        // Устанавливаем новую позицию слайдера
+        currentPositionReview += shiftAmountReview;
+        // Ограничиваем позицию слайдера, чтобы не выходить за границы
+        currentPositionReview = Math.min(0, Math.max(-(review_single.length - 3) * reviewWidth, currentPositionReview));
+        // Применяем сдвиг к блокам отзывов
+        reviews.style.transform = `translateX(${currentPositionReview}px)`;
+    }
+    // Обработчики клика на стрелки влево и вправо
+    leftArrowReview.addEventListener('click', () => shiftReviews(1)); // Сдвигаем вправо на один отзыв
+    rightArrowReview.addEventListener('click', () => shiftReviews(-1)); // Сдвигаем влево на один отзыв
 
 });
