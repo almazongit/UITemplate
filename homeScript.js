@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Функция для сдвига блоков проектов
     function shiftProjects(direction) {
-        const projectWidth = projects[0].offsetWidth; // Ширина одного блока проекта
+        const projectWidth = projects[0].offsetWidth + 50; // Ширина одного блока проекта
         const shiftAmount = projectWidth * direction; // Расстояние, на которое нужно сдвинуть проекты
         // Устанавливаем новую позицию слайдера
         currentPosition += shiftAmount;
