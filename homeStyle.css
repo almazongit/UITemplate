@@ -123,6 +123,7 @@ header {
                 line-height: 27px;
                 letter-spacing: 0em;
                 border: 1px solid #2F2F37;
+                text-decoration: none;
             }
             .btn-contact:hover{
                 background-color: #fff;
