@@ -37,7 +37,6 @@
     }
 }
 
-
 @media screen and (max-width: 389px) {
     .container {
         margin: 0 16px;
@@ -54,6 +53,8 @@ header .header {
     height: 119px;
     border-bottom: 1px solid #343a40;
     background-color: #000;
+    display: flex;
+    justify-content: space-between;
 }
 header .header .navbar {
     height: 100%;
@@ -781,9 +782,9 @@ main{
                         img {
                             filter: brightness(0%);
                         }
-                        
+
                     }
-                    
+
                     .right-portfolio:hover {
                         background: #fff;
                         img {
@@ -1074,9 +1075,9 @@ main{
                         img {
                             filter: brightness(0%);
                         }
-                        
+
                     }
-                    
+
                     .right-review:hover {
                         background: #fff;
                         img {
@@ -1198,8 +1199,6 @@ main{
             min-width: 1062px;
         }
     }
-
-
 }
 
 footer {
@@ -1459,3 +1458,63 @@ footer {
     }
 }
 
+
+@media screen and (min-width: 390px) and (max-width: 1439px) {
+    header .header {
+        height: auto;
+        .navbar {
+            .logo {
+                font-size: 22px;
+            }
+            .btns-nav {
+                padding-top: 20px;
+
+                .btn-nav {
+                    padding: 24px 40px;
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+
+                .btn-link {
+                    padding: 14px 20px;
+                }
+            }
+        }
+    }
+    main {
+        .name-picture-roller {
+            padding: 89px 0 0 0;
+            .up {
+                .name-lines {
+                    .name-content {
+                        .content {
+                            font-size: 18px;
+                            line-height: 24px;
+                        }
+
+                        .name {
+                            font-size: 60px;
+                            line-height: 81px;
+                        }
+                    }
+                    .slogan-btn {
+                        .text-btn {
+                            .stroke-btn {
+                                padding: 16px 40px;
+                            }
+                        }
+
+                        .text {
+                            font-size: 48px;
+                            line-height: 65px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 389px) {
+
+}
