@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Получаем слайды и стрелки управления
     const slider = document.getElementById('slider');
     const slides = slider.querySelectorAll('.events-slide');
-    const leftArrow = document.querySelector('.left');
-    const rightArrow = document.querySelector('.right');
+    const leftArrow = document.querySelector('.leftArrow');
+    const rightArrow = document.querySelector('.rightArrow');
 
     let currentSlide = 0; // Индекс текущего слайда
     // Функция для отображения нужного слайда
@@ -81,3 +81,24 @@ document.addEventListener("DOMContentLoaded", function () {
     rightArrowReview.addEventListener('click', () => shiftReviews(-1)); // Сдвигаем влево на один отзыв
 
 });
+
+// FAQ аккордион
+document.addEventListener('DOMContentLoaded', function() {
+    let acc = document.getElementsByClassName("accordion");
+    let i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            let panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+});
+
+
+

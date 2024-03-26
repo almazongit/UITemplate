@@ -528,7 +528,7 @@ main{
                     border: 1px solid #1C1C21;
                     padding: 10px;
                     border-radius: 100px;
-                    .left, .right {
+                    .leftArrow, .rightArrow {
                         border: 1px solid;
                         border-image-source: linear-gradient(180deg, #2F2F37 27.85%, rgba(47, 47, 55, 0) 100%);
                         border-radius: 100%;
@@ -873,85 +873,149 @@ main{
                 }
             }
         }
-
         .faq-content {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+             display: flex;
+             flex-direction: row;
+             justify-content: center;
+
+             /* .attributes {
+                 display: flex;
+                 flex-direction: row;
+                 justify-content: space-between;
+                 .attributes-container {
+                     display: flex;
+                     flex-direction: column;
+                     gap:20px;
+                 }
+                 .attribute {
+                     display: flex;
+                     justify-content: space-between;
+                     gap: 40px;
+                     flex-direction: row-reverse;
+
+                     position: relative;
+                     padding: 30px 50px;
+
+                     .attribute-input {
+                         position: absolute;
+                         top:0;
+                         left:0;
+                         opacity: 0;
+                     }
+
+                     .attribute-input:checked ~ .attribute-content > .attribute-text{
+                         display: block;
+                     }
+                     .attribute-input:checked ~ .attribute-btn{
+                         padding: 20px;
+                         background: url('/images/faq_open.svg') no-repeat center;
+                     }
+
+                     .attribute-btn {
+                         cursor: pointer;
+
+                         border-radius: 50%;
+                         padding: 20px;
+
+                         width: 52px;
+                         height: 52px;
+
+                         border: 1px solid #1C1C21;
+
+                         background: url('/images/faq_close.svg') no-repeat center;
+                     }
+
+                     .attribute-text.open {
+                         display: block;
+                     }
+                     .attribute-content {
+                         .attribute-header {
+                             font-size: 20px;
+                             font-weight: 600;
+                             line-height: 27px;
+
+                             color: #AFB0B6;
+                             text-transform: uppercase;
+
+                         }
+                         .attribute-text {
+                             display: none;
+                             color: #FFF;
+                             padding-top: 20px;
+                             border-top: none;
+                             display: none;
+                         }
+                     }
+                 }
+
+                 .attribute:not(:first-child) {
+                     border-top: 1px solid #343a40;
+                 }
+             }
+
+             .attribute-items:first-child {
+                 border-right: 1px solid #343a40;
+                 border-top: none;
+             } */
 
             .attributes {
                 display: flex;
-                flex-direction: column;
-                gap:10px;
-                width: 50%;
-                .attribute {
-            
+                flex-direction: row;
+                justify-content: space-between;
+                .attributes-container {
                     display: flex;
-                    justify-content: space-between;
-                    gap: 40px;
-                    flex-direction: row-reverse;
-                
-                    position: relative;
-                    padding: 30px 50px;
-
-                    .attribute-input {
-                        position: absolute;
-                        top:0;
-                        left:0;
-                        opacity: 0;
-                    }
-
-                    .attribute-input:checked ~ .attribute-content > .attribute-text{
-                        display: block;
-                    }
-                    .attribute-input:checked ~ .attribute-btn{
-                        padding: 20px;
-                        background: url('/images/faq_open.svg') no-repeat center;
-                    }
-                    
-                    .attribute-btn {
-                        cursor: pointer;
-                    
-                        border-radius: 50%;
-                        padding: 20px;
-                        
-                        width: 52px;
-                        height: 52px;
-                    
-                        border: 1px solid #1C1C21;
-                    
-                        background: url('/images/faq_close.svg') no-repeat center;
-                    }
-                    
-                    .attribute-content {
-                        .attribute-header {
-                            font-size: 20px;
-                            font-weight: 600;
-                            line-height: 27px;
-                        
-                            color: #AFB0B6;
+                    flex-direction: column;
+                    gap: 20px;
+                    border-right: 1px solid #1C1C21;
+                    .attribute {
+                        display: flex;
+                        flex-direction: column;
+                        position: relative;
+                        .accordion {
+                            font-family: 'Manrope';
                             text-transform: uppercase;
-                        
+                            text-align: left;
+                            background-color: transparent;
+                            color: #AFB0B6;
+                            cursor: pointer;
+                            padding: 30px 50px 30px 50px;
+                            font-size: 20px;
+                            font-weight: 500;
+                            width: 100%;
+                            border: none;
+                            outline: none;
+                            transition: 0.4s;
                         }
-                        .attribute-text {
-                            padding-top: 20px;
-                        
-                            border-top: none;
-                            display: none;
+                        /*.active, .accordion:hover {*/
+                        /*    background-color: #ccc;*/
+                        /*}*/
+                        .panel {
+                            padding: 0 90px 0 50px;
+                            background-color: transparent;
+                            max-height: 0;
+                            overflow: hidden;
+                            transition: max-height 0.2s ease-out;
+                            font-size: 18px;
+                            font-weight: 400;
+                            font-family: 'Manrope';
+                            color: #797C86;
+                        }
+                        .accordion:after {
+                            content: url('images/faq_close.svg');
+                            font-size: 13px;
+                            color: #777;
+                            float: right;
+                            margin-left: 5px;
+                        }
+
+                        .active:after {
+                            content: url('images/faq_open.svg');
                         }
                     }
                 }
-                
-                .attribute:not(:first-child) {
-                    border-top: 1px solid #343a40;
-                }
             }
 
-            .attribute-items:first-child {
-                border-right: 1px solid #343a40;
-                border-top: none;
-            }
-        }
+         }
     }
 
     .reviews {
@@ -1178,6 +1242,21 @@ main{
 }
 
 footer {
+    position: relative;
+
+    .leftSvg {
+        position: absolute;
+        left: -159px; /* Ширина левого марджина container */
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .rightSvg {
+        position: absolute;
+        right: -159px; /* Ширина правого марджина container */
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
     .roller-footer {
         .roller{
             display: flex;
@@ -1203,14 +1282,8 @@ footer {
             }
         }
     }
-    .leftSvg {
-        position: absolute;
-    }
-    .rightSvg {
-        position: absolute;
-    }
     .links-footer {
-
+        position: relative;
         display: flex;
         flex-direction: row;
         align-items: center;
