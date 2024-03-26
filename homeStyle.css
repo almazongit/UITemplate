@@ -43,7 +43,18 @@
     }
 } 
 
-
+header {
+    .test {
+        z-index: 20;
+        position: fixed; 
+        left: 0; 
+        top: 0;
+        width: 100%;
+        height: 119px;
+        border-bottom: 1px solid #343a40;
+        background-color: #000;
+    }
+}
 header .header {
     z-index: 20;
     position: fixed; 
@@ -51,7 +62,6 @@ header .header {
     top: 0;
     width: 100%;
     height: 119px;
-    border-bottom: 1px solid #343a40;
     background-color: #000;
     display: flex;
     justify-content: space-between;
@@ -1382,25 +1392,73 @@ footer {
         }
 
     }
-    .social-footer {
-        width: 100%;
-        padding: 20px 0;
+    .social-content {
         border-top: 1px solid #343a40;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .social {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
+        .social-footer {
             width: 100%;
-            .policy {
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .social {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-between;
-                gap: 11px;
+                width: 100%;
+                .policy {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 11px;
+                    padding-right: 75px;
+                    p {
+                        color: #797C86;
+                        font-family: Manrope;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 27px;
+                    }
+                    .term {
+                        padding-right: 11px;
+                        border-right: 1px solid #1c1c21;
+                    }
+                }
+    
+                .media {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 196px;
+                    height: 68px;
+                    border-radius: 40px;
+                    background-color: #000;
+                    border: 1px solid #343a40;
+                    .logos {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 16px;
+                        .logo {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: #2F2F37;
+                            height: 48px;
+                            width: 48px;
+                            border: 1px solid #343a40;
+                            border-radius: 30px;
+                        }
+                        .logo:hover {
+                            background-color: #fff;
+                            img {
+                                filter: brightness(0%);
+                            }
+                        }
+                    }
+                }
+    
                 p {
                     color: #797C86;
                     font-family: Manrope;
@@ -1408,54 +1466,10 @@ footer {
                     font-weight: 400;
                     line-height: 27px;
                 }
-                .term {
-                    padding-right: 11px;
-                    border-right: 1px solid #1c1c21;
-                }
-            }
-
-            .media {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 196px;
-                height: 68px;
-                border-radius: 40px;
-                background-color: #000;
-                border: 1px solid #343a40;
-                .logos {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    gap: 16px;
-                    .logo {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: #2F2F37;
-                        height: 48px;
-                        width: 48px;
-                        border: 1px solid #343a40;
-                        border-radius: 30px;
-                    }
-                    .logo:hover {
-                        background-color: #fff;
-                        img {
-                            filter: brightness(0%);
-                        }
-                    }
-                }
-            }
-
-            p {
-                color: #797C86;
-                font-family: Manrope;
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 27px;
             }
         }
     }
+
 }
 
 
