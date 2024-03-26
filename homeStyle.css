@@ -105,6 +105,7 @@ header {
                     line-height: 27px;
                     letter-spacing: 0em;
                     border: 1px #343a40 solid;
+                    text-decoration: none;
                 }
                 .btn-nav:hover {
                     background: #343a40;
@@ -365,7 +366,6 @@ main{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 80px 0 0 0;
             gap: 30px;
             .text-content {
                 display: flex;
